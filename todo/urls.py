@@ -11,4 +11,6 @@ urlpatterns = [
     path("mark_as_not_done/<int:pk>/", views.mark_as_not_done, name="mark_as_not_done"),
     # Edit task
     path("edit_task/<int:pk>/", views.edit_task, name="edit_task"),
+    # Delete task
+    path("delete_task/<int:pk>/", views.delete_task, name="delete_task"),
 ]

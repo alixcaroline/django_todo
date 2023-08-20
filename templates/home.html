@@ -48,8 +48,10 @@
 									class="btn btn-success"
 									><i class="fa fa-check"></i> Mark as Done</a
 								>
-								<a class="btn btn-danger"><i class="fa fa-trash"></i></a>
-								<a href="{% url 'edit_task' task.id %}" class="btn btn-primary"
+								<a href="{% url 'delete_task' task.pk %}" class="btn btn-danger"
+									><i class="fa fa-trash"></i
+								></a>
+								<a href="{% url 'edit_task' task.pk %}" class="btn btn-primary"
 									><i class="fa fa-pencil"></i
 								></a>
 							</span>
@@ -70,7 +72,9 @@
 									class="btn btn-success"
 									><i class="fa fa-check"></i> Mark as Not Done</a
 								>
-								<a class="btn btn-danger"><i class="fa fa-trash"></i></a>
+								<a href="{% url 'delete_task' task.pk %}" class="btn btn-danger"
+									><i class="fa fa-trash"></i
+								></a>
 							</span>
 						</div>
 					</div>
